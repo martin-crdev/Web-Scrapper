@@ -1,0 +1,14 @@
+#Generamos un mapa de mapas y las propiedades de los mapas del mapa inicial son las que utilizaremos
+news_sites: 
+  eltiempo:
+    url: https://www.eltiempo.com/
+    queries:
+      homepage_article_links:  'h3[class ~= title-container] > a'
+      article_body: 'div[class ~= articulo-contenido]'
+      article_title: 'h1[class ~= titulo]'
+  elpais:
+    url: http://elpais.com
+    queries:
+      homepage_article_links: 'h2[class ~= headline] > a'
+      article_body: 'div[class ~= article_body] > p'
+      article_title: 'h1[class ~= a_t]'
